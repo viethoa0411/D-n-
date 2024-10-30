@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ela Admin - HTML5 Admin Template</title>
+    <title>HHC - BFH Bee Film Hub</title>
     <meta name="description" content="Ela Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -84,43 +84,46 @@
                 <ul class="nav navbar-nav">
                     
                     <li class="menu-item dropdown">
-                        <a href="#"> <i class="menu-icon fa fa-home"></i>Quản lý rạp</a>
+                        <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiRap' ?>"> <i class="menu-icon fa fa-home"></i>Quản lý rạp</a>
 
                     </li>
                     <li class="menu-item dropdown">
-                        <a href="#"><i class="menu-icon fa fa-sitemap"></i>Quản lý thể loại phim</a>
+                        <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiTheLoai' ?>"><i class="menu-icon fa fa-sitemap"></i>Quản lý thể loại phim</a>
                     </li>
                     <li class="menu-item dropdown">
-                        <a href="#"><i class="menu-icon fa fa-video-camera"></i>Quản lý phòng phim
+                        <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiPhong' ?>"><i class="menu-icon fa fa-video-camera"></i>Quản lý phòng phim
                         </a>
                     </li>
                     <li class="menu-item dropdown">
-                        <a href="#"><i class="menu-icon fa fa-film"></i>Quản lý phim
+                        <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiPhim' ?>"><i class="menu-icon fa fa-film"></i>Quản lý phim
                         </a>
                     </li>
                     <li class="menu-item dropdown">
-                        <a href="#"><i class="menu-icon fa fa-shopping-cart"></i>Quản lý danh sách đặt vé xem phim
+                        <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiDanhSachVe' ?>"><i class="menu-icon fa fa-shopping-cart"></i>Quản lý danh sách đặt vé xem phim
                         </a>
                     </li>
                     <li class="menu-item dropdown">
-                        <a href="#"><i class="menu-icon fa fa-comments"></i>Quản lý bình luận
+                        <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiBinhLuan' ?>"><i class="menu-icon fa fa-comments"></i>Quản lý bình luận
                         </a>
                     </li>
                     <li class="menu-item dropdown">
-                        <a href="#"><i class="menu-icon fa fa-bar-chart-o"></i>Thống kê </a>
+                        <a href="<?php echo BASE_URL_ADMIN . '?act=thongKe' ?>"><i class="menu-icon fa fa-bar-chart-o"></i>Thống kê </a>
                     </li>
                     <li class="menu-item dropdown">
-                        <a href="#"><i class="menu-icon fa fa-laptop"></i>Quản lý suất chiếu
+                        <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiXuatChieu' ?>"><i class="menu-icon fa fa-laptop"></i>Quản lý suất chiếu
                         </a>
                     </li>
-                    <li class="menu-item dropdown">
-                        <a href="#" data-toggle="dropdown"><i class="menu-icon fa fa-users"></i>Quản lý tài khoản</a>
-                    </li>
-
-
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Pages</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-sitemap"></i>Quản lí tài khoản</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa  fa-user"></i><a href="<?php echo BASE_URL_ADMIN . '?act=quanLiNguoiDung' ?>">Tài khoản quản trị</a></li>
+                            <li><i class="menu-icon fa  fa-users"></i><a href="<?php echo BASE_URL_ADMIN . '?act=quanLiKhachHang' ?>">Tài khoản khách hàng</a></li>
+                            <li><i class="menu-icon fa  fa-info-circle"></i><a href="<?php echo BASE_URL_ADMIN . '?act=quanLiThongTin' ?>">Thông tin tài khoản</a></li>
+                        </ul>
                     </li>
+
+
+                    
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
@@ -237,4 +240,4 @@
     </script>
 </body>
 
-</html>
+</html>                                                                                                                                                                    
