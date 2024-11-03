@@ -74,6 +74,97 @@
         #cellPaiChart {
             height: 160px;
         }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgba(235, 195, 52, 0.2);
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1300px;
+            padding: 30px 20px;
+            padding-top: 60px;
+        }
+
+        .container .center {
+            text-align: center;
+        }
+
+        .center h1 {
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .our-team-text {
+            margin: 0 auto;
+            max-width: 700px;
+            line-height: 1.8;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+
+        .card .card-name {
+            margin-bottom: 10px;
+            font-weight: 500;
+            font-size: 24px;
+        }
+
+        .card .card-text {
+            font-size: 16px;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        .card .btn {
+            padding: 15px 60px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 50px;
+            text-decoration: none;
+            color: #000;
+            transition: 0.3s ease;
+        }
+
+        .card .btn:hover {
+            box-shadow: -2px -2px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px);
+        }
+
+        @media screen and (max-width: 700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+        
     </style>
 </head>
 
@@ -125,7 +216,7 @@
         </nav>
     </aside>
     <!-- /#left-panel -->
-    
+
     <!-- Thanh bên phải -->
     <div id="right-panel" class="right-panel">
         <!-- Header-->
@@ -164,14 +255,49 @@
             </div>
         </header>
         <!-- /header -->
-        
+
         <div class="content mt-3">
             <div class="animated fadeIn">
+
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Thông tin địa điểm</strong>
+                            
+                            <div class="container">
+                                <div class="center">
+                                    <div class="our-team-text"><b style="color: red;">Bee Film Hub</b> là một nền tảng trực tuyến dành cho những người yêu thích điện ảnh. Chúng tôi cung cấp một loạt các bộ phim từ nhiều thể loại khác nhau, 
+                                    bao gồm hành động, hài hước, kinh dị, và nhiều hơn nữa. Mục tiêu của chúng tôi là mang đến cho người xem những trải nghiệm điện ảnh tuyệt vời 
+                                    với chất lượng hình ảnh và âm thanh tốt nhất.
+                                    </div>
+                                </div>
+                            <div class="card-header text-center">
+                                <strong>Thông tin thành viên</strong>
+                            </div>
+                                <div class="cards">
+
+                                    <div class="card">
+                                        <img src="/duan1_Nhom11/images/thanhvien3.webp" alt="anh1">
+                                        <h3 class="card-name">Nguyễn Văn Huy</h3>
+                                        <p class="card-text">Sinh viên Fpoly</p>
+                                        <a href="#" class="btn">Xem chi tiết</a>
+                                    </div>
+
+                                    <div class="card">
+                                        <img src="/duan1_Nhom11/images/thanhvien2.png" alt="anh2">
+                                        <h3 class="card-name">Vũ Kiều Chi</h3>
+                                        <p class="card-text">Sinh viên Fpoly</p>
+                                        <a href="#" class="btn">Xem chi tiết</a>
+                                    </div>
+
+                                    <div class="card">
+                                        <img src="/duan1_Nhom11/images/thanhvien1.png" alt="anh3">
+                                        <h3 class="card-name">Đỗ Việt Hòa</h3>
+                                        <p class="card-text">Sinh viên Fpoly</p>
+                                        <a href="#" class="btn">Xem chi tiết</a>
+                                    </div>
+
+
+                                </div>
                             </div>
                             <div class="card-body">
                                 <iframe
@@ -183,20 +309,20 @@
                 </div>
             </div><!-- .animated -->
         </div><!-- .content -->
-        
+
         <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer-wrap">
-                            <p class="text-center">© 2023 HHC - BFH Bee Film Hub</p>
+                            <p class="text-center">© 2024 HHC - BFH Bee Film Hub</p>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
     </div><!-- /#right-panel -->
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
