@@ -129,7 +129,7 @@
             height: 100px;
             width: 100px;
             object-fit: cover;
-            border-radius: 50%;
+            border-radius: 1%;
             margin-bottom: 30px;
         }
 
@@ -164,7 +164,6 @@
                 grid-template-columns: 1fr;
             }
         }
-        
     </style>
 </head>
 
@@ -177,34 +176,37 @@
                     <li class="menu-item dropdown">
                         <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiRap' ?>"> <i class="menu-icon fa fa-home"></i>Quản lý rạp</a>
                     </li>
-                    <li class="menu-item dropdown">
-                        <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiTheLoai' ?>"><i class="menu-icon fa fa-sitemap"></i>Quản lý thể loại phim</a>
-                    </li>
+                    
                     <li class="menu-item dropdown">
                         <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiPhong' ?>"><i class="menu-icon fa fa-video-camera"></i>Quản lý phòng phim
                         </a>
                     </li>
+
                     <li class="menu-item dropdown">
-                        <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiPhim' ?>"><i class="menu-icon fa fa-film"></i>Quản lý phim
-                        </a>
-                    </li>
-                    <li class="menu-item dropdown">
-                        <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiDanhSachVe' ?>"><i class="menu-icon fa fa-shopping-cart"></i>Quản lý danh sách đặt vé xem phim
+                        <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiDanhSachVe' ?>"><i class="menu-icon fa fa-shopping-cart"></i>Quản lý danh sách đặt vé
                         </a>
                     </li>
                     <li class="menu-item dropdown">
                         <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiBinhLuan' ?>"><i class="menu-icon fa fa-comments"></i>Quản lý bình luận
                         </a>
                     </li>
-                    <li class="menu-item dropdown">
-                        <a href="<?php echo BASE_URL_ADMIN . '?act=thongKe' ?>"><i class="menu-icon fa fa-bar-chart-o"></i>Thống kê </a>
-                    </li>
+                    
                     <li class="menu-item dropdown">
                         <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiXuatChieu' ?>"><i class="menu-icon fa fa-laptop"></i>Quản lý suất chiếu
                         </a>
                     </li>
+                    <li class="menu-item dropdown">
+                        <a href="<?php echo BASE_URL_ADMIN . '?act=thongKe' ?>"><i class="menu-icon fa fa-bar-chart-o"></i>Thống kê </a>
+                    </li>
+                    <li class="menu-item dropdown">
+                        <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiPhim' ?>"><i class="menu-icon fa fa-film"></i>Quản lý phim
+                        </a>
+                    </li>
+                    <li class="menu-item dropdown">
+                        <a href="<?php echo BASE_URL_ADMIN . '?act=quanLiTheLoai' ?>"><i class="menu-icon fa fa-sitemap"></i>Quản lý thể loại phim</a>
+                    </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-sitemap"></i>Quản lý tài khoản</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa  fa-bars"></i>Quản lý tài khoản</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-user"></i><a href="<?php echo BASE_URL_ADMIN . '?act=quanLiNguoiDung' ?>">Tài khoản quản trị</a></li>
                             <li><i class="menu-icon fa fa-users"></i><a href="<?php echo BASE_URL_ADMIN . '?act=quanLiKhachHang' ?>">Tài khoản khách hàng</a></li>
@@ -223,8 +225,8 @@
         <header id="header" class="header">
             <div class="top-left">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="./"><img src="/duan1_Nhom11/images/logo2.png" alt="Logo" width="260px" height="40px"></a>
-                    <a class="navbar-brand hidden" href="./"><img src="/duan1_Nhom11/images/logo2.png" alt="Logo1" width="100px" height="40px"></a>
+                    <a class="navbar-brand" href="./"><img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/462568801_601351862462540_8090446170272868322_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG3WeBtPV6KnC_8c9sG66zt_btnVtBznh79u2dW0HOeHvmWv3csFmmqauUGviv9bo7QPUc9mlUJGw54c9G1bdh9&_nc_ohc=L-xGH3BEF_IQ7kNvgGRcio7&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=AWe5PMv4-06Hq-5DfwJPpNn&oh=03_Q7cD1QFTZGnONi4PVUdgmUhAPSU2y5gzq7RjqxIVBpg8MZ_Xiw&oe=674F1083" alt="Logo" width="260px" height="40px"></a>
+                    <a class="navbar-brand hidden" href="./"><img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/462568801_601351862462540_8090446170272868322_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG3WeBtPV6KnC_8c9sG66zt_btnVtBznh79u2dW0HOeHvmWv3csFmmqauUGviv9bo7QPUc9mlUJGw54c9G1bdh9&_nc_ohc=L-xGH3BEF_IQ7kNvgGRcio7&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=AWe5PMv4-06Hq-5DfwJPpNn&oh=03_Q7cD1QFTZGnONi4PVUdgmUhAPSU2y5gzq7RjqxIVBpg8MZ_Xiw&oe=674F1083" alt="Logo1" width="100px" height="40px"></a>
                     <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                 </div>
             </div>
@@ -242,7 +244,7 @@
 
                     <div class="user-area dropdown float-right">
                         <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="user-avatar rounded-circle" src="/duan1_Nhom11/images/BFH.jpg" alt="Hình đại diện người dùng">
+                            <img class="user-avatar rounded-circle" src="https://scontent.fhan14-4.fna.fbcdn.net/v/t1.15752-9/462558354_1768316567240669_1874724754795816513_n.png?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFKatYpLC-mS9rmFWYdUml60b_kpkPa_hfRv-SmQ9r-Fz-mK9Ug3vjPxcJxSnImqkuXcqskshwn8HY7fXalXfLr&_nc_ohc=ZBokyfpwEUYQ7kNvgHtuAE1&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=Am6VL5KmYlPsQH4HlfcCiIg&oh=03_Q7cD1QEvX6wqCLEK9yJyAwY6T9bot6jM_goJffd4MdE61OqFmw&oe=674F0EAA" alt="Hình đại diện người dùng">
                         </a>
 
                         <div class="user-menu dropdown-menu">
@@ -262,35 +264,35 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            
+
                             <div class="container">
                                 <div class="center">
-                                    <div class="our-team-text"><b style="color: red;">Bee Film Hub</b> là một nền tảng trực tuyến dành cho những người yêu thích điện ảnh. Chúng tôi cung cấp một loạt các bộ phim từ nhiều thể loại khác nhau, 
-                                    bao gồm hành động, hài hước, kinh dị, và nhiều hơn nữa. Mục tiêu của chúng tôi là mang đến cho người xem những trải nghiệm điện ảnh tuyệt vời 
-                                    với chất lượng hình ảnh và âm thanh tốt nhất.
+                                    <div class="our-team-text"><b style="color: red;">Bee Film Hub</b> là một nền tảng trực tuyến dành cho những người yêu thích điện ảnh. Chúng tôi cung cấp một loạt các bộ phim từ nhiều thể loại khác nhau,
+                                        bao gồm hành động, hài hước, kinh dị, và nhiều hơn nữa. Mục tiêu của chúng tôi là mang đến cho người xem những trải nghiệm điện ảnh tuyệt vời
+                                        với chất lượng hình ảnh và âm thanh tốt nhất.
                                     </div>
                                 </div>
-                            <div class="card-header text-center">
-                                <strong>Thông tin thành viên</strong>
-                            </div>
+                                <div class="card-header text-center">
+                                    <strong>Thông tin thành viên</strong>
+                                </div>
                                 <div class="cards">
 
                                     <div class="card">
-                                        <img src="/duan1_Nhom11/images/thanhvien3.webp" alt="anh1">
+                                        <img src="https://i.pinimg.com/originals/0f/1a/51/0f1a51265fb04ebaa2b58d94ff95107c.gif" alt="anh1">
                                         <h3 class="card-name">Nguyễn Văn Huy</h3>
                                         <p class="card-text">Sinh viên Fpoly</p>
                                         <a href="#" class="btn">Xem chi tiết</a>
                                     </div>
 
                                     <div class="card">
-                                        <img src="/duan1_Nhom11/images/thanhvien2.png" alt="anh2">
+                                        <img src="https://i.pinimg.com/originals/3b/f2/3b/3bf23b69eec4d69181ab3d8abeb29b44.gif" alt="anh2">
                                         <h3 class="card-name">Vũ Kiều Chi</h3>
                                         <p class="card-text">Sinh viên Fpoly</p>
                                         <a href="#" class="btn">Xem chi tiết</a>
                                     </div>
 
                                     <div class="card">
-                                        <img src="/duan1_Nhom11/images/thanhvien1.png" alt="anh3">
+                                        <img src="https://i.pinimg.com/originals/2f/43/40/2f4340e2ac66f664d0551096e63e493a.gif" alt="anh3">
                                         <h3 class="card-name">Đỗ Việt Hòa</h3>
                                         <p class="card-text">Sinh viên Fpoly</p>
                                         <a href="#" class="btn">Xem chi tiết</a>
